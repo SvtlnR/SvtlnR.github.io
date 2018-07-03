@@ -6,10 +6,22 @@
 	</title>
 	<style type="text/css">
 		body {background-image: url("bg.png"); height: 100%; width:100%;}
-		header{text-align: center; background-color: 	#7B68EE}
-		content{margin-left: 20%; }
-		.par{text-align: center;font-weight: bold; font-size: 20px}
+		header{text-align: center;}
+		main{padding: 20px;}
+		.content{display: none;}
+		.par{text-align: left; float:left; font-weight: bold; font-size: 20px}
 	</style>
+	<script>
+		function show(idDiv){
+			var field=document.getElementById(idDiv);
+			if(field.style.display=='none'){
+				field.style.display='block';
+			}
+			else{
+				field.style.display='none';
+			}
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -18,28 +30,50 @@
 		</h2>
 	</header>
 	<main>
-	<div class="par">
-		Personal information
-	</div>
-	<div class="content">
-	
-		<b>Age:</b> 19. <br>
-		<b>School:</b> finished school 22 in 2016. <br>
-		<b>University:</b> Petro Mohyla Black Sea National University.<br>
-		<b>Department:</b> Computer Science.<br>
-		<b>Hobby:</b> play piano.
-	</div>
-	<div class="par">
-		What I already know
-	</div>
-	<div class="content">
-		html, css, a little bit of JavaScript
-	</div>
-	<div class="par">
-		What I want to learn
-	</div>
-	<div class="content">
-		I want to improve my skills in JavaScript.
-	</div>
+	<dl>
+		<dt>
+			<div class="par">
+				Personal information 
+			</div>
+			<input type="button" onClick="show('personal')" value="Show" >
+		</dt>
+		<br/>
+		<div class="content" id="personal">	
+			<dd>
+				<b>Age:</b> 19. <br>
+				<b>School:</b> finished school 22 in 2016. <br>
+				<b>University:</b> Petro Mohyla Black Sea National University.<br>
+				<b>Department:</b> Computer Science.<br>
+				<b>Hobby:</b> play piano.
+				<br/>
+			</dd>
+		</div>
+		<dt>
+			<div class="par">
+				What I already know 
+			</div>
+			<input type="button" onClick="show('know')" value="Show" >
+		</dt>
+		<br/>
+		<div class="content" id="know">
+			<dd>
+				html, css, a little bit of JavaScript and jQuery
+				<br/>
+			</dd>
+		</div>
+		<dt>
+			<div class="par">
+				What I want to learn 
+			</div>
+			<input type="button" onClick="show('plans')" value="Show" >
+		</dt>
+		<br/>
+		<div class="content" id="plans">
+			<dd>
+				I want to improve my skills in JavaScript, learn how to work with frameworks(e.g. Angular).
+				<br/>
+			</dd>		
+		</div>
+		</dl>
 	</main>
 </body>
