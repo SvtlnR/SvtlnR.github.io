@@ -1,11 +1,13 @@
 <!Doctype html>
+<html>
 <head>
 	<meta charset="utf-8">
 	<title>
 		About me
 	</title>
 	<style type="text/css">
-		body {background-image: url("bg.png"); height: 100%; width:100%;}
+		html{overflow-x: hidden;}
+		body {height:100vh;background: linear-gradient(to top,#F8F8FF, #D8BFD8);background-repeat: no-repeat;}
 		header{text-align: center;}
 		.inf{margin: auto; width: 80%}
 		.content{display: none;}
@@ -16,9 +18,12 @@
 			var field=document.getElementById(idDiv);
 			if(field.style.display=='block'){
 				field.style.display='none';
+				field.value='Show';
+				
 			}
 			else{
 				field.style.display='block';
+				field.value='Hide';
 			}
 		}
 	</script>
@@ -81,3 +86,4 @@
 </div>
 	</main>
 </body>
+</html>
