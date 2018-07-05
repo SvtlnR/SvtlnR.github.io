@@ -5,85 +5,87 @@
 	<title>
 		About me
 	</title>
-	<style type="text/css">
-		html{overflow-x: hidden;}
-		body {height:100vh;background: linear-gradient(to top,#F8F8FF, #D8BFD8);background-repeat: no-repeat;}
-		header{text-align: center;}
-		.inf{margin: auto; width: 80%}
-		.content{display: none;}
-		.par{text-align: left; float:left; margin-right: 20px;font-weight: bold; font-size: 20px}
-	</style>
-	<script>
-		function show(idDiv){
-			var field=document.getElementById(idDiv);
-			if(field.style.display=='block'){
-				field.style.display='none';
-				field.value='Show';
-				
-			}
-			else{
-				field.style.display='block';
-				field.value='Hide';
-			}
-		}
-	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<header>
-		<h2>
-			Svetlana Ragulina
-		</h2>
+		<div id="hdr">
+				Svetlana Ragulina
+		</div>	
 	</header>
+	<nav>
+		<ul>
+			<li class="navli"><div id="shgi">General information</div></li>
+			<li class="navli"><div id="shfsh">Favourite shows</div></li>
+			<li class="navli"><div id="shcont">Contacts</div></li>
+		</ul>
+	</nav>
 	<main>
-		<div class="inf">
-	<dl>
-		<dt>
-			<div class="par">
-				Personal information 
+		<div id="geninf">
+			<div class="inf">
+				<dl>
+					<dt>
+						<div class="par">
+							Personal information 
+						</div>
+					</dt>
+					<dd>
+						<div class="content">	
+							<strong>Age:</strong> 19. <br>
+							<strong>School:</strong> finished school 22 in 2016. <br>
+							<strong>University:</strong> Petro Mohyla Black Sea National University.<br>
+							<strong>Department:</strong> Computer Science.<br>
+							<strong>Speciality:</strong>Computer science and IT.<br>
+							<strong>Hobby:</strong> play piano.<br>
+						</div>
+					</dd>
+					<dt>
+						<div class="par">
+							What I already know 
+						</div>
+					</dt>
+					<dd>
+						<div class="content">
+							html, css, a little bit of JavaScript and jQuery
+						</div>
+					</dd>
+					<dt>
+						<div class="par">
+							What I want to learn 
+						</div>
+					</dt>
+					<dd>
+						<div class="content">
+							I want to improve my skills in JavaScript, learn how to work with frameworks(e.g. Angular).
+						</div>
+					</dd>
+				</dl>
 			</div>
-			<input type="button" onClick="show('personal')" value="Show" >
-		</dt>
-		<br/>
-		<div class="content" id="personal">	
-			<dd>
-				<b>Age:</b> 19. <br>
-				<b>School:</b> finished school 22 in 2016. <br>
-				<b>University:</b> Petro Mohyla Black Sea National University.<br>
-				<b>Department:</b> Computer Science.<br>
-				<b>Speciality:</b>Computer science and IT.<br>
-				<b>Hobby:</b> play piano.<br>
-
-			</dd>
-			<br/>
+			<img src="photo.jpg"  width="300">
 		</div>
-		<dt>
-			<div class="par">
-				What I already know 
+		<div id="favsh">
+			<div class="inf">
+				<div class="content">
+					<div class="par">Ellen</div>
+					<iframe width="427" height="240" src="https://www.youtube.com/embed/txtlWTDr34A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="par">James Corden</div>
+					<iframe width="427" height="240" src="https://www.youtube.com/embed/QjvzCTqkBDQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="par">Jimmy Fallon</div>
+					<iframe width="427" height="240" src="https://www.youtube.com/embed/tPwuLLL64HM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
 			</div>
-			<input type="button" onClick="show('know')" value="Show" >
-		</dt>
-		<br/>
-		<div class="content" id="know">
-			<dd>
-				html, css, a little bit of JavaScript and jQuery
-			</dd>
-			<br/>
 		</div>
-		<dt>
-			<div class="par">
-				What I want to learn 
+		<div id="cont">
+			<div class="inf content">
+				<strong>E-mail:</strong> <a href="mailto:svet.ragulina@gmail.com">svet.ragulina@gmail.com</a>.<br>
+				<strong>Instagram:</strong> <a href="https://www.instagram.com/_svtln_r/" target="_blank">@_svtln_r</a>.
 			</div>
-			<input type="button" onClick="show('plans')" value="Show" >
-		</dt>
-		<br/>
-		<div class="content" id="plans">
-			<dd>
-				I want to improve my skills in JavaScript, learn how to work with frameworks(e.g. Angular).
-			</dd>		
-			<br/>
 		</div>
-		</dl>
-</div>
 	</main>
+	<footer>
+		&copy; 2018
+	</footer>
 </body>
 </html>
