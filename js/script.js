@@ -15,8 +15,19 @@ $(document).ready(function(){
 		$("#favsh").hide('fast');
 		$("#cont").show('fast');	
 	})
+	
 	$("#sandwich").click(function(){
 		$("nav ul").toggle('fast');
 	})
+	$(window).on("orientationchange",function(){
+  		if(window.orientation != 0)
+  		{
+    		$("nav ul").css({'display':'inline-block'});
+  		}
+  		else{
+  			$("nav ul").css({'display':'none'});	
+  		}
+	})	
 	$("footer").text(String.fromCharCode(0169)+ (new Date()).getFullYear());
+	
 });
