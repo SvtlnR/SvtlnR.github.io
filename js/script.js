@@ -18,7 +18,9 @@ $(document).ready(function(){
 	
 	$("#sandwich").click(function(){
 		$("nav ul").toggle('fast');
-	})
+	})	
+	$("footer").text(String.fromCharCode(0169)+ (new Date()).getFullYear());
+	if(window.matchMedia("(max-width: 768px)").matches){
 	$(window).on("orientationchange",function(){
   		if(window.orientation != 0)
   		{
@@ -27,7 +29,6 @@ $(document).ready(function(){
   		else{
   			$("nav ul").css({'display':'none'});	
   		}
-	})	
-	$("footer").text(String.fromCharCode(0169)+ (new Date()).getFullYear());
-	
+	})
+	}
 });
