@@ -159,6 +159,9 @@ img{
 }
 @media (max-width: 812px)
   and (orientation: landscape){
+  	#sandwich{
+	display: none;
+	}
   	nav ul{
   		display: inline-block;
   		
