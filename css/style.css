@@ -2,6 +2,7 @@ html{
 	overflow-x: hidden;
 }
 body {
+	width: 100%;
 	margin:0;
 	padding:0;
 	height:100vh;
@@ -12,8 +13,8 @@ header{
 	height: 18%;
 }
 footer{ 
-	padding-left: 40px;
-	height: 20px;
+	padding-left: 5%;
+	height: 3%;
 	position: fixed;
 	bottom: 0; 
 }
@@ -26,41 +27,45 @@ ul{
 			margin:0;
 }
 img{ 
-	padding: 2%; 
+	padding: 2%;
+	width: 100%; 
 }
-		#hdr{
-			display:none;
-			font-family: "Arial";
-			font-size: 40px;
-			color: #c4a8aa;
-			text-align: center;
-			position:relative;
-			top:50%;
-			font-variant:small-caps;
-		}
-		.navli{
-			display: inline-block;
-			list-style-type: none;
-			padding: 10px 20px;
-		}
-		.inf{
-			margin-left: 10%; 
-			margin-bottom: 5%;
-			width: 50%;float:left;
-			font-family: "Arial";
-			color: #3c1731;
-		}
-		.content{
-			padding: 20px;
-		}
-		.par{
-			text-align: left; 
-			margin-right: 20px;
-			font-weight: bold; 
-			font-size: 20px
-		}
-#favsh, #cont{
-	display: none;
+.fr{
+	padding: 5%;
+}
+.navli{
+		display: inline-block;
+		list-style-type: none;
+		padding: 10px 20px;
+}
+.inf{
+		margin-left: 10%; 
+		margin-bottom: 5%;
+		width: 50%;
+		float:left;
+		font-family: "Arial";
+		color: #3c1731;
+}
+.content{
+		padding: 20px;
+}
+.stripe{
+	width: 35px;
+    height: 5px;
+    background-color: #3c1731;
+    margin: 6px 0;
+}
+.par{
+		text-align: left; 
+		margin-right: 15%;
+		font-weight: bold; 
+		font-size: 20px;
+}
+.imgwr{
+		float:right;
+		width:30%;
+		margin-right: 10%;
+		margin-top: 1%;
 }
 .navli div{
 	text-decoration: none;
@@ -74,14 +79,313 @@ img{
 .content a{
 	color: #3c1731;
 }
-/*@media screen 
-	and (min-width: 960px) 
-	and (max-width: 1599px){
-		
-}*/
-@media (min-width: 320px) 
-  and (max-width: 480px)
-  and (orientation: portrait)
-  {
-  header{background-color: #000000;}	
+#hdr{
+		display:none;
+		font-family: "Arial";
+		font-size: 40px;
+		color: #c4a8aa;
+		text-align: center;
+		position:relative;
+		top:50%;
+		font-variant:small-caps;
 }
+
+#sandwich{
+	display: none;
+}
+#favsh, #cont{
+	display: none;
+}
+@media (max-width: 480px)
+  and (orientation: portrait)
+  {	
+  	nav ul{
+  		display: none;
+  		border-top: solid #3c1731;
+  	}
+  	nav{
+  		padding: 3%;
+  	}
+  	img{ 
+	padding: 0%;
+	width: 100%; 
+	}
+	iframe{
+		width: 100%;
+		height: *;
+	}
+  	.inf{
+		margin-left: 5%;
+		margin-right: 5%; 
+		margin-bottom: 2%;
+		width: 90%;
+	}
+	.par{
+		text-align: left; 
+		font-size: 160%;
+	}
+	.navli{
+  		display: table-row;
+  	}
+  	.content{
+		padding: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		margin-right: 10%;
+		margin-left: 0%;
+	}
+	.imgwr{
+		width:80%;
+		margin-top: 2%;
+		margin-bottom: 5%;
+		margin-right: 10%;
+		margin-left: 2%;
+	}
+	#sandwich{
+  		display: inline-block;
+  		margin-left: 5%;
+
+  	}
+  	#hdr{	
+		font-size: 180%;
+	}
+  	#shgi,#shfsh,#shcont{
+  		padding: 3%;
+  		width: 100%;
+  	}
+  	#cont{
+  		margin:5%;
+  	}
+}
+@media (max-width: 812px)
+  and (orientation: landscape){
+  	footer{
+  		height: 6%;
+  	}
+  	iframe{
+  		width: 100%;
+  		height: *;
+  	}
+  	.content a{
+	color: #e9e7ea;
+	}
+  	.inf{
+  		color: #e9e7ea;
+		margin-left: 5%; 
+		margin-right:  5%; 
+		margin-bottom: 2%;
+		width: 90%;
+	}
+	.par{
+		text-align: left; 
+		font-size: 160%;
+	}
+  	.content{
+		padding: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		margin-right: 10%;
+		margin-left: 0%;
+	}
+	.imgwr{
+		width:50%;
+		padding: 0%;
+		margin-top: 0%;
+		margin-bottom: 5%;
+		margin-right: 25%;
+		margin-left: 0%;
+	}
+	#hdr{
+  		font-size: 120%;
+  		margin-bottom: 5%;
+  	}
+  }
+  @media (min-width: 768px)
+  	and (max-width: 959px)
+  	and (orientation:portrait){
+  		nav{
+			height: 5%;
+		}
+		iframe{
+			width: 100%;
+			height: *;
+			
+		}
+		.navli{
+			margin-top: 1%;
+		}
+		.navli div{
+			font-size: 120%;
+		}
+		.inf{
+			padding: 2%;
+			margin-right: 5%;
+			margin-left: 5%; 
+			margin-bottom: 2%;
+			width: 90%;
+		}
+		.par{
+			text-align: left; 
+			font-size: 190%;
+		}
+  		.content{
+			padding: 1%;
+			margin-top: 1%;
+			margin-bottom: 1%;
+			margin-right: 10%;
+			margin-left: 0%;
+			font-size: 150%;
+		}
+		.imgwr{
+			width:70%;
+			padding: 0%;
+			margin-top: 0%;
+			margin-bottom: 5%;
+			margin-right: 16%;
+			margin-left: 4%;
+		}
+		#hdr{	
+			font-size: 280%;
+		}
+		#cont{
+			margin-top: 4%;
+  			margin-left:8%;
+  		}
+}
+@media (min-width: 960px)
+  	and (max-width: 1024px)
+  	and (orientation:landscape){
+  		header{
+  			height: 20%;
+  		}
+  		footer{
+  			font-size: 120%;
+  		}
+  		nav{
+			height: 8%;
+		}
+		iframe{
+			width: 100%;
+			height: *;
+			
+		}
+		.navli{
+			margin-top: 1%;
+		}
+		.navli div{
+			font-size: 140%;
+		}
+		.inf{
+			padding: 2%;
+			margin-right: 5%;
+			margin-left: 5%; 
+			margin-bottom: 1%;
+			width: 90%;
+		}
+		.par{
+			text-align: left; 
+			font-size: 210%;
+		}
+  		.content{
+			padding: 1%;
+			margin-top: 1%;
+			margin-bottom: 1%;
+			margin-right: 8%;
+			margin-left: 0%;
+			font-size: 170%;
+		}
+		.imgwr{
+			width:70%;
+			padding: 0%;
+			margin-top: 0%;
+			margin-bottom: 5%;
+			margin-right: 16%;
+			margin-left: 4%;
+		}
+		#hdr{	
+			font-size: 300%;
+		}
+		#cont{
+			margin-top: 4%;
+  			margin-left:8%;
+  		}
+}
+@media (min-width: 	3656px)
+  	and (max-width: 5120px){
+  		header{
+  			height: 18%;
+  		}
+  		nav{
+			height: 10%;
+		}
+		iframe{
+			width: *;
+			height: 80%;			
+		}
+		footer{
+			font-size: 3vh;
+			padding-left: 10%;
+			height: 5%;
+	
+		}
+		.fr{
+  			padding: 1%;
+  		}
+		.navli{
+			margin-top: 1%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		.navli div{
+			font-size: 5vh;
+		}
+		.inf{
+			height: 100%;
+			padding: 2%;
+			margin-right: 0%;
+			margin-left: 5%; 
+			margin-bottom: 1%;
+			width: 50%;
+			float: left;
+		}
+		.par{
+			text-align: left; 
+			font-size: 6vh;
+		}
+  		.content{
+			padding: 1%;
+			margin-top: 1%;
+			margin-bottom: 1%;
+			margin-right: 8%;
+			margin-left: 0%;
+			font-size: 4vh;
+		}
+		.imgwr{
+			width:30%;
+			padding: 0%;
+			margin-top: 0%;
+			margin-bottom: 5%;
+			margin-right: 5%;
+			margin-left: 4%;
+		}
+  		#hdr{	
+			font-size: 8vh;
+		}
+		#cont{
+			margin-top: 2%;
+  			margin-left:8%;
+  		}
+  		#favsh .inf .content{
+  			margin-top: 0%;
+  		}
+  		#favsh >.inf{
+  			float: none;
+  			width: 100%;
+  			padding: 0%;
+  		}
+
+
+  		
+}
+
+

@@ -15,4 +15,8 @@ $(document).ready(function(){
 		$("#favsh").hide('fast');
 		$("#cont").show('fast');	
 	})
+	$("#sandwich").click(function(){
+		$("nav ul").toggle('fast');
+	})
+	$("footer").text(String.fromCharCode(0169)+ (new Date()).getFullYear());
 });
