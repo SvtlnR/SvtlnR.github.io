@@ -12,11 +12,15 @@ header{
 	background-color: #3c1731;
 	height: 18%;
 }
-footer{ 
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 	padding-left: 5%;
 	height: 3%;
 	bottom: 0;
-	position: fixed;
+	background-color: #3c1731;
+	color: #c4a8aa;
 	
 }
 nav{
