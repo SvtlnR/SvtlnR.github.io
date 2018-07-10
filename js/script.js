@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#hdr").fadeIn('slow', function(){});
+	$(".hdr").fadeIn('slow', function(){});
 	$("#shgi").click(function(){
 		$("#favsh").hide('fast');
 		$("#cont").hide('fast');
@@ -28,6 +28,17 @@ $(document).ready(function(){
   		}
   		else{
   			$("nav ul").css({'display':'none'});	
+  		}
+	})
+	}
+	if(window.matchMedia("(min-width: 768px)").matches){
+	$(window).on("orientationchange",function(){
+  		if(window.orientation != 0)
+  		{
+    		$("nav ul").css({'display':'inline-block'});
+  		}
+  		else{
+  			$("nav ul").css({'display':'inline-block'});	
   		}
 	})
 	}

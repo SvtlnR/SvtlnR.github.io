@@ -15,8 +15,9 @@ header{
 footer{ 
 	padding-left: 5%;
 	height: 3%;
+	bottom: 0;
 	position: fixed;
-	bottom: 0; 
+	
 }
 nav{
 		background-color: #fbf8f8;
@@ -90,7 +91,7 @@ iframe{
 .content a{
 	color: #3c1731;
 }
-#hdr{
+.hdr{
 		display:none;
 		font-family: "Arial";
 		font-size: 40px;
@@ -153,7 +154,7 @@ iframe{
   		margin-left: 5%;
 
   	}
-  	#hdr{	
+  	.hdr{	
 		font-size: 180%;
 	}
   	#shgi,#shfsh,#shcont{
@@ -198,7 +199,7 @@ iframe{
 		margin-right: 25%;
 		margin-left: 0%;
 	}
-	#hdr{
+	.hdr{
   		font-size: 120%;
   		margin-bottom: 5%;
   	}
@@ -242,7 +243,7 @@ iframe{
 			margin-right: 16%;
 			margin-left: 4%;
 		}
-		#hdr{	
+		.hdr{	
 			font-size: 280%;
 		}
 		#cont{
@@ -295,7 +296,7 @@ iframe{
 			margin-right: 16%;
 			margin-left: 4%;
 		}
-		#hdr{	
+		.hdr{	
 			font-size: 300%;
 		}
 		#cont{
@@ -354,7 +355,7 @@ iframe{
 			margin-right: 5%;
 			margin-left: 4%;
 		}
-  		#hdr{	
+  		.hdr{	
 			font-size: 8vh;
 		}
 		#cont{
